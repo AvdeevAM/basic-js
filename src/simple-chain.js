@@ -26,6 +26,7 @@ const chainMaker = {
     }
     return newStr;
 },
+
   reverseChain() {
     let regex = /( .+ )/;
     let newStr = "";

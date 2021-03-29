@@ -7,5 +7,5 @@ module.exports = function dateSample(sampleActivity) {
   if ((!sampleActivity) || (typeof sampleActivity != 'string') || (isNaN(sampleActivity)) || (Number(sampleActivity) < 0) || !(isFinite(sampleActivity))){
     return false;
   }
-  return Math.ceil((Math.log(MODERN_ACTIVITY / Number(sampleActivity))) / (1.22 * 10**(-4)));
+  return Math.ceil((Math.log(MODERN_ACTIVITY / Number(sampleActivity))) / (0.693 / HALF_LIFE_PERIOD));
 };
