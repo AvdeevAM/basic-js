@@ -1,7 +1,7 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function getSeason(date) {
-  if (typeof date != "object" || date == null){
+  if (typeof date != "object" || date == null || date instanceof String){
     throw new Error();
   }
   if (!date){
